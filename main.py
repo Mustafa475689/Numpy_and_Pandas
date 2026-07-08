@@ -25,8 +25,13 @@ import numpy as np
 # print(trd)
 # print(trd.ndim)
 
+# here we can make more than 3 dimansions array
+# arr = np.array([1, 2, 3, 4], ndmin=5)
 
-arr = np.array([1, 2, 3, 4], ndmin=5)
+# print(arr)
+# print('number of dimensions :', arr.ndim)
 
-print(arr)
-print('number of dimensions :', arr.ndim)
+# Array indexing
+# arr = np.array([1, 2, 3, 4])
+# print(arr[1])
+# print(arr[1] + arr[3])
