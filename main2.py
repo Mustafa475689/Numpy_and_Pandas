@@ -42,6 +42,21 @@ import numpy as np
 # print(newarry)
 
 # Check if the returned array is a copy or a view:
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 
-print(arr.reshape(2, 4).base)
+# print(arr.reshape(2, 4).base)
+
+# Unknown Dimension
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+
+# newarr = arr.reshape(2, 2, -1)
+
+# print(newarr)
+
+# Convert the array into a 1D array:
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+newarr = arr.reshape(-1)
+
+print(newarr)
+
