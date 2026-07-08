@@ -43,20 +43,46 @@ import numpy as np
 
 # Check if the returned array is a copy or a view:
 # arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
-
 # print(arr.reshape(2, 4).base)
 
 # Unknown Dimension
 # arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
-
 # newarr = arr.reshape(2, 2, -1)
-
 # print(newarr)
 
 # Convert the array into a 1D array:
-arr = np.array([[1, 2, 3], [4, 5, 6]])
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+# newarr = arr.reshape(-1)
+# print(newarr)
 
-newarr = arr.reshape(-1)
+# Iterating Arrays..............
+# arr = np.array([1, 2, 3])
 
-print(newarr)
+# for x in arr:
+#   print(x)
+# 2d
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+# for x in arr:
+#   print(x)
+# 3d
+# arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+
+# for x in arr:
+#   print(x)
+
+# itreating array in different data types
+# arr = np.array([1, 2, 3])
+
+# for x in np.nditer(arr, flags=['buffered'], op_dtypes=['S']):
+#   print(x)
+
+# ...................................
+# Iterating With Different Step Size
+# .........................................
+# Iterate through every scalar element of the 2D array skipping 1 element:
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+for x in np.nditer(arr[:, ::2]):
+    print(x)
+
+# Enumerated Iteration Using ndenumerate()......................
 
