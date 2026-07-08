@@ -98,3 +98,9 @@ import numpy as np
 # arr = np.array([1,2,3,4,5], dtype="i4")
 # print(arr)
 # print(arr.dtype)
+
+# Changing Data types
+arr = np.array([1.2, 2.1 ,3.2 ,4.1 ,5.2])
+newarr = arr.astype("i")
+print(newarr)
+print(newarr.dtype)
