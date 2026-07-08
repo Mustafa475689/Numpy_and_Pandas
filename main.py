@@ -35,3 +35,10 @@ import numpy as np
 # arr = np.array([1, 2, 3, 4])
 # print(arr[1])
 # print(arr[1] + arr[3])
+
+# 2d and 3d array indeing
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print(arr[1, 3])
+print(arr[1, 3] - arr[0, 4])
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # 3d 
+print(arr[1, 0, 2])
