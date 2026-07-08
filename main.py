@@ -37,8 +37,22 @@ import numpy as np
 # print(arr[1] + arr[3])
 
 # 2d and 3d array indeing
-arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
-print(arr[1, 3])
-print(arr[1, 3] - arr[0, 4])
-arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # 3d 
-print(arr[1, 0, 2])
+# arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+# print(arr[1, 3])
+# print(arr[1, 3] - arr[0, 4])
+# arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # 3d 
+# print(arr[1, 0, 2])
+
+# negetice indexing
+# arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+
+# print('Last element from 2nd dim: ', arr[1, -1])
+
+
+# Slicing
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[1:5])
+print(arr[2:4])
+print(arr[5:6])
+print(arr[4:])
+print(arr[:4])
