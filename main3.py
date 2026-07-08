@@ -84,4 +84,5 @@ import numpy as np
 # Multiple Values search
 arr = np.array([1, 3, 5, 7])
 x = np.searchsorted(arr, [2, 4, 6])
+# x = np.searchsorted(arr, [5, 3,])
 print(x)
