@@ -65,8 +65,36 @@ import numpy as np
 # print(arr[::2])
 
 # 2d slicing
-arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+# arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 
-print(arr[1, 1:4])
-print(arr[0:2, 2]) # from both element return index 2
-print(arr[0:2, 1:4]) #this will return the 2d array
+# print(arr[1, 1:4])
+# print(arr[0:2, 2]) # from both element return index 2
+# print(arr[0:2, 1:4]) #this will return the 2d array
+
+# Data Types ..................
+
+# i - integer
+# b - boolean
+# u - unsigned integer
+# f - float
+# c - complex float
+# m - timedelta
+# M - datetime
+# O - object
+# S - string
+# U - unicode string
+# V - fixed chunk of memory for other type ( void )
+    
+
+# arr = np.array([1, 2, 3, 4])
+# arr = np.array(['apple', 'banana', 'cherry'])
+
+# print(arr.dtype)
+
+# arr = np.array([1,2,3,4], dtype='S')
+# print(arr)
+# print(arr.dtype)
+
+# arr = np.array([1,2,3,4,5], dtype="i4")
+# print(arr)
+# print(arr.dtype)
