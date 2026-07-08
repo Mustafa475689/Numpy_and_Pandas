@@ -68,7 +68,20 @@ import numpy as np
 # newarr = np.array_split(arr, 3, axis=1)
 # print(newarr)
 
-# hslipt()
-arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
-newarr = np.hsplit(arr, 3)
-print(newarr)
+# # hslipt()
+# arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+# newarr = np.hsplit(arr, 3)
+# print(newarr)
+
+# Search sorted Array
+# arr = np.array([6, 7, 8, 9])
+# x = np.searchsorted(arr, 7)
+# print(x)
+# Search From the Right Side
+# arr = np.array([6, 7, 8, 9])
+# x = np.searchsorted(arr, 7, side='right')
+# print(x)
+# Multiple Values search
+arr = np.array([1, 3, 5, 7])
+x = np.searchsorted(arr, [2, 4, 6])
+print(x)
