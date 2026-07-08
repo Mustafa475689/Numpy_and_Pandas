@@ -80,9 +80,15 @@ import numpy as np
 # Iterating With Different Step Size
 # .........................................
 # Iterate through every scalar element of the 2D array skipping 1 element:
-arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
-for x in np.nditer(arr[:, ::2]):
-    print(x)
+# arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+# for x in np.nditer(arr[:, ::2]):
+#     print(x)
 
 # Enumerated Iteration Using ndenumerate()......................
+# arr = np.array([1, 2, 3])
+# for idx, x in np.ndenumerate(arr):
+#     print(idx, x)
 
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]]) #2d
+for idx, x in np.ndenumerate(arr):
+    print(idx, x)
