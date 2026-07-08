@@ -34,14 +34,23 @@ import numpy as np
 # print(arr)
 
 #  Stacking along depth/height
-arr1 = np.array([1, 2, 3])
-arr2 = np.array([4, 5, 6])
-arr = np.dstack((arr1, arr2))
-print(arr)
+# arr1 = np.array([1, 2, 3])
+# arr2 = np.array([4, 5, 6])
+# arr = np.dstack((arr1, arr2))
+# print(arr)
 
 # ..........................
 # Splitting NumPy Arrays
 # ..........................
+# arr = np.array([1, 2, 3, 4, 5, 6])
+# newarr = np.array_split(arr, 3)
+# print(newarr)
+
+# newarre = np.array_split(arr, 4)
+# print(newarre)
+
 arr = np.array([1, 2, 3, 4, 5, 6])
 newarr = np.array_split(arr, 3)
-print(newarr)
+print(newarr[0])
+print(newarr[1])
+print(newarr[2])
