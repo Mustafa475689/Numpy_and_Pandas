@@ -1,5 +1,7 @@
 import numpy as np
 from numpy import random
+import seaborn as sns
+import matplotlib.pyplot as plt
 # Random # 
 # .........................................#
 # Generate Randomnumbers ..................# Generate a random integer from 0 to 100:
@@ -47,10 +49,31 @@ from numpy import random
 #       Random Permutation
 # ................................ #
 # Shuffling Arrays
-arr = np.array([2, 4, 6, 8])
-random.shuffle(arr)
-print(arr)
+# arr = np.array([2, 4, 6, 8])
+# random.shuffle(arr)
+# print(arr)
 
-# Generating Permutation of Arrays
-arr = np.array([1, 2, 3, 4, 5])
-print(random.permutation(arr))
+# # Generating Permutation of Arrays
+# arr = np.array([1, 2, 3, 4, 5])
+# print(random.permutation(arr))
+
+# ................................ #
+#       Seaborn
+# ................................ #
+# # Plotting a Displot
+# sns.displot([0, 1, 2, 3, 4, 5])
+# plt.show()
+
+# Plotting a Displot Without the Histogram
+# sns.displot([0, 1, 2, 3, 4, 5], kind="kde")
+# plt.show()
+
+# ................................ #
+#  Normal (Gaussian) Distribution
+# ................................ #
+# Use the random.normal() method to get a Normal Data Distribution.
+# x = random.normal(size=(2, 3))
+# print(x)
+
+x = random.normal(loc=1, scale=2, size=(2, 3))
+print(x)
