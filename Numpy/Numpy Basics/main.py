@@ -1,11 +1,4 @@
-# import pandas
 import numpy as np
-# mydataset = {
-#   'cars': ["BMW", "Volvo", "Ford"],
-#   'passings': [3, 7, 2]
-# }
-
-
 
 # arr = np.array([1, 2, 3, 4, 5])
 
