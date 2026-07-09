@@ -33,8 +33,14 @@ import numpy as np
 # print("the Remaining of array are ", remn)
 
 # Quotient and Mod
-arr1 = np.array([10, 20, 30, 40, 50, 60])
-arr2 = np.array([3, 7, 9, 8, 2, 33])
+# arr1 = np.array([10, 20, 30, 40, 50, 60])
+# arr2 = np.array([3, 7, 9, 8, 2, 33])
 
-quot = np.divmod(arr1, arr2)
-print("the Quotient of array are ", quot)
+# quot = np.divmod(arr1, arr2)
+# print("the Quotient of array are ", quot)
+
+# Absolute Values
+# arr = np.array([-1, -2, 1, 2, 3, -4])
+# newarr = np.absolute(arr)
+
+# print(newarr)
