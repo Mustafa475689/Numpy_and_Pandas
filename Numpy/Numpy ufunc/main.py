@@ -64,5 +64,10 @@ import numpy as np
 
 # ......... Floor ......
 # The floor() function rounds off decimal to nearest lower integer.
-arr = np.floor([-3.1666, 3.6667])
+# arr = np.floor([-3.1666, 3.6667])
+# print(arr)
+
+# ..... Ceil ...........
+# The ceil() function rounds off decimal to nearest upper integer.
+arr = np.ceil([-3.1666, 3.6667])
 print(arr)
