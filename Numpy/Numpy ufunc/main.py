@@ -69,5 +69,16 @@ import numpy as np
 
 # ..... Ceil ...........
 # The ceil() function rounds off decimal to nearest upper integer.
-arr = np.ceil([-3.1666, 3.6667])
-print(arr)
+# arr = np.ceil([-3.1666, 3.6667])
+# print(arr)
+
+# ............................... #
+# Numpy Logs
+# ............................... #
+# Log at Base 2
+arr = np.arange(1, 10)
+print(np.log2(arr))
+
+# Log at Base 10
+arr = np.arange(1, 10)
+print(np.log10(arr))
