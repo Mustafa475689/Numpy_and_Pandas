@@ -7,33 +7,51 @@ import numpy as np
 # newarr = arr[x]
 # print(newarr)
 
-# .... Creating the Filter Array ............
+# # .... Creating the Filter Array ............
+# arr = np.array([1, 3, 4 ,6, 8])
+# filter_arr = []
+
+# for element in arr:
+#     if element > 5:
+#         filter_arr.append(True)
+#     else:
+#         filter_arr.append(False)
+
+# newarr = arr[filter_arr]
+
+# print(filter_arr)
+# print(newarr)
+
+# # ....... Filter even numbers in array..............
+# arr = np.array([1, 3, 4 ,6, 8])
+# filter_arr = []
+
+# for element in  arr:
+#     if element % 2 == 0:
+#         filter_arr.append(True)
+#     else:
+#         filter_arr.append(False)
+
+# newarr = arr[filter_arr]
+
+# print(filter_arr)
+# print(newarr)
+
+# .............. Creating Filter Directly From Array........
 arr = np.array([1, 3, 4 ,6, 8])
-filter_arr = []
-
-for element in arr:
-    if element > 5:
-        filter_arr.append(True)
-    else:
-        filter_arr.append(False)
-
+filter_arr = arr < 2
 newarr = arr[filter_arr]
 
 print(filter_arr)
 print(newarr)
 
-# ....... Filter even numbers in array..............
-arr = np.array([1, 3, 4 ,6, 8])
-filter_arr = []
-
-for element in  arr:
-    if element % 2 == 0:
-        filter_arr.append(True)
-    else:
-        filter_arr.append(False)
-
+# ............ returnnoly even in directly filter array
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+filter_arr = arr % 2 == 0
 newarr = arr[filter_arr]
 
 print(filter_arr)
 print(newarr)
+
+
 
