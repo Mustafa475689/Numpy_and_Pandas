@@ -62,13 +62,33 @@ import pandas as pd
 # print(df.loc[[0, 1]]) # use a list of series
 
 # Named Indexes ... With the index argument, you can name your own indexes.
-data = {
-  "calories": [420, 380, 390],
-  "duration": [50, 40, 45]
-}
+# data = {
+#   "calories": [420, 380, 390],
+#   "duration": [50, 40, 45]
+# }
 
-df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+# df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+
+# print(df) 
+# print(df.loc["day2"]) # Locate Named Indexes
+
+# # ............................................
+# # ..  Pandas Read CSV ......................
+
+# df = pd.read_csv('students.csv')
+# print(df.to_string()) 
+
+# # If you have a large DataFrame with many rows, Pandas will only return the first 5 rows, and the last 5 rows:
+# # Print the DataFrame without the to_string() method:
+# df = pd.read_csv('students.csv')
+# print(df) 
+
+# # max_rows ... You can check your system's maximum rows with the pd.options.display.max_rows statement.
+# print(pd.options.display.max_rows) 
+
+# You can change the maximum rows number with the same statement. ...
+pd.options.display.max_rows = 9999
+
+df = pd.read_csv('students.csv')
 
 print(df) 
-print(df.loc["day2"]) # Locate Named Indexes
-
