@@ -14,7 +14,7 @@ import numpy as np
 # else:
 #   print('add is not ufunc')
 
-# Simple arithmetic ............................
+# .......................... Simple arithmetic ............................
 # arr1 = np.array([10, 11, 12, 13, 14, 15])
 # arr2 = np.array([20, 21, 22, 23, 24, 25])
 
@@ -44,3 +44,11 @@ import numpy as np
 # newarr = np.absolute(arr)
 
 # print(newarr)
+
+# ............................... #
+# Rounding Decimals
+# ............................... #
+# Truncation
+# Remove the decimals, and return the float number closest to zero. Use the trunc() and fix() functions.
+arr = np.trunc([-3.1666, 3.6667])
+print(arr)
