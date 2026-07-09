@@ -22,11 +22,18 @@ from numpy import random
 # x = random.randint(100, size=(3, 5))
 # print(x)
 
-# Generate Random Number From Array ............
-x = random.choice([3, 5, 7, 9])
-print(x)
+# # Generate Random Number From Array ............
+# x = random.choice([3, 5, 7, 9])
+# print(x)
 
-# 2d random array........ The choice() method also allows you to return an array of values....
-# Add a size() parameter to specify the shape of the array.
-x = random.choice([3, 5, 7, 9], size=(3, 5))
+# # 2d random array........ The choice() method also allows you to return an array of values....
+# # Add a size() parameter to specify the shape of the array.
+# x = random.choice([3, 5, 7, 9], size=(3, 5))
+# print(x)
+
+# ................................ #
+#       Random Distribution
+# ................................ #
+# We can generate random numbers based on defined probabilities using the choice() method of the random module.
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
 print(x)
