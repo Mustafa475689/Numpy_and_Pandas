@@ -1,5 +1,5 @@
 import numpy as np
-from math import log
+# from math import log
 
 # Create Your Own ufunc
 # def myadd(x, y):
@@ -88,6 +88,27 @@ from math import log
 # arr = np.arange(1, 10)
 # print(np.log(arr))
 
-# Log at Any Base
-nplog = np.frompyfunc(log, 2, 1)
-print(nplog(100, 15))
+# # Log at Any Base
+# nplog = np.frompyfunc(log, 2, 1)
+# print(nplog(100, 15))
+
+# ............................... #
+# NumPy Summations
+# ............................... #
+# Summations ......... difference b/w summation and addition 
+# Addition is done between two arguments whereas summation happens over n elements.
+# arr1 = np.array([1, 2, 3])
+# arr2 = np.array([1, 2, 3])
+
+# newarr = np.add(arr1, arr2) # Addition
+# summation = np.sum([arr1, arr2]) #summation
+# print("Addition ", newarr)
+# print("Summation ", summation)
+
+# Summation Over an Axis
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([1, 2, 3])
+
+newarr = np.sum([arr1, arr2], axis=1)
+
+print(newarr)
