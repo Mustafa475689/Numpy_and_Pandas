@@ -64,3 +64,19 @@ import numpy as np
 # arr = np.arange(1, 11)
 # x = np.lcm.reduce(arr)
 # print(x)
+
+# .................................. #
+# NumPy GCD Greatest Common Divisor
+# .................................. #
+# Finding GCD
+# num1 = 6
+# num2 = 9
+# x = np.gcd(num1, num2)
+
+# print(x)
+
+# Finding GCD in Arrays
+# arr = np.array([20, 8, 32, 36, 16])
+# x = np.gcd.reduce(arr)
+
+# print(x)
