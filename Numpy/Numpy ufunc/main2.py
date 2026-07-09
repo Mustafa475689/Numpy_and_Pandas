@@ -38,6 +38,29 @@ import numpy as np
 # print(newarr)
 
 # Compute discrete difference of the following array twice: ..... We can perform this operation repeatedly by giving parameter n.
-arr = np.array([10, 15, 25, 5])
-newarr = np.diff(arr, n=2)
-print(newarr)
+# arr = np.array([10, 15, 25, 5])
+# newarr = np.diff(arr, n=2)
+# print(newarr)
+
+# .................................. #
+#  NumPy LCM Lowest Common Multiple
+# .................................. #
+# Finding LCM
+
+# num1 = 4
+# num2 = 6
+# x = np.lcm(num1, num2)
+# print(x)
+
+# Finding LCM in Arrays ... To find the Lowest Common Multiple of all values in an array, you can use the reduce() method.
+# The reduce() method will use the ufunc, in this case the lcm() function, on each element, and reduce the array by one dimension.
+
+# arr = np.array([3, 6, 9])
+# x = np.lcm.reduce(arr)
+# print(x)
+
+# # Find the LCM of all values of an array where the array contains all integers from 1 to 10:
+
+# arr = np.arange(1, 11)
+# x = np.lcm.reduce(arr)
+# print(x)
