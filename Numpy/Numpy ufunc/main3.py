@@ -44,23 +44,61 @@ import numpy as np
 # NumPy Hyperbolic Functions
 # .............................. #
 # # Hyperbolic Functions
-# NumPy provides the ufuncs sinh(), cosh() and tanh() that take values in radians and produce the corresponding sinh, cosh and tanh values..
-x = np.sinh(np.pi/2)
-print(x)
+# # NumPy provides the ufuncs sinh(), cosh() and tanh() that take values in radians and produce the corresponding sinh, cosh and tanh values..
+# x = np.sinh(np.pi/2)
+# print(x)
 
-# Find cosh values for all of the values in arr:
-arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
-x = np.cosh(arr)
-print(x)
+# # Find cosh values for all of the values in arr:
+# arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+# x = np.cosh(arr)
+# print(x)
 
-# Finding Angles ..............
-# Numpy provides ufuncs arcsinh(), arccosh() and arctanh() that produce radian values for corresponding sinh, cosh and tanh values given.
-x = np.arcsinh(1.0)
-print(x)
+# # Finding Angles ..............
+# # Numpy provides ufuncs arcsinh(), arccosh() and arctanh() that produce radian values for corresponding sinh, cosh and tanh values given.
+# x = np.arcsinh(1.0)
+# print(x)
 
-# Angles of Each Value in Arrays
-arr = np.array([0.1, 0.2, 0.5])
-x = np.arctanh(arr)
-print(x)
+# # Angles of Each Value in Arrays
+# arr = np.array([0.1, 0.2, 0.5])
+# x = np.arctanh(arr)
+# print(x)
 
-    
+# .............................. #
+# NumPy Set Operations
+# .............................. #
+# Create Sets in NumPy.... We can use NumPy's unique() method to find unique elements from any array
+# arr = np.array([1, 1, 1, 2, 3, 4, 5, 5, 6, 7])
+# x = np.unique(arr)
+# print(x)
+
+# # Finding Union ... To find the unique values of two arrays, use the union1d() method.
+# arr1 = np.array([1, 2, 3, 4])
+# arr2 = np.array([3, 4, 5, 6])
+
+# newarr = np.union1d(arr1, arr2)
+
+# print(newarr)
+
+# # Finding Intersection ... To find only the values that are present in both arrays, use the intersect1d() method.
+# arr1 = np.array([1, 2, 3, 4])
+# arr2 = np.array([3, 4, 5, 6])
+
+# newarr = np.intersect1d(arr1, arr2, assume_unique=True)
+
+# print(newarr)
+
+# # Finding Difference ... To find only the values in the first set that is NOT present in the seconds set, use the setdiff1d() method.
+# set1 = np.array([1, 2, 3, 4])
+# set2 = np.array([3, 4, 5, 6])
+
+# newarr = np.setdiff1d(set1, set2, assume_unique=True)
+
+# print(newarr)
+
+# Finding Symmetric Difference ... To find only the values that are NOT present in BOTH sets, use the setxor1d() method.
+set1 = np.array([1, 2, 3, 4])
+set2 = np.array([3, 4, 5, 6])
+
+newarr = np.setxor1d(set1, set2, assume_unique=True)
+
+print(newarr) 
