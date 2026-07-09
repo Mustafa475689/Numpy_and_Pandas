@@ -75,5 +75,19 @@ import matplotlib.pyplot as plt
 # x = random.normal(size=(2, 3))
 # print(x)
 
-x = random.normal(loc=1, scale=2, size=(2, 3))
+# x = random.normal(loc=1, scale=2, size=(2, 3))
+# print(x)
+
+# ..... Visualization of Normal Distribution
+# sns.displot(random.normal(size=1000), kind="kde")
+# plt.show()
+
+# ................................ #
+#  Binomial Distribution
+# ................................ #
+x = random.binomial(n=10, p=0.5, size=10)
 print(x)
+
+# Visualization of Binomial Distribution
+sns.displot(random.binomial(n=10, p=0.5, size=1000))
+plt.show()
