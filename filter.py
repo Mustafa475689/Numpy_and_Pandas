@@ -22,3 +22,18 @@ newarr = arr[filter_arr]
 print(filter_arr)
 print(newarr)
 
+# ....... Filter even numbers in array..............
+arr = np.array([1, 3, 4 ,6, 8])
+filter_arr = []
+
+for element in  arr:
+    if element % 2 == 0:
+        filter_arr.append(True)
+    else:
+        filter_arr.append(False)
+
+newarr = arr[filter_arr]
+
+print(filter_arr)
+print(newarr)
+
