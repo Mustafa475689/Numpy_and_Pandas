@@ -14,11 +14,27 @@ import numpy as np
 # else:
 #   print('add is not ufunc')
 
-# Simple arithmetic
-arr1 = np.array([10, 11, 12, 13, 14, 15])
-arr2 = np.array([20, 21, 22, 23, 24, 25])
+# Simple arithmetic ............................
+# arr1 = np.array([10, 11, 12, 13, 14, 15])
+# arr2 = np.array([20, 21, 22, 23, 24, 25])
 
-newarr = np.add(arr1, arr2)
-sub = np.subtract(arr1, arr2)
-print(newarr)
-print(sub)
+# newarr = np.add(arr1, arr2)
+# sub = np.subtract(arr1, arr2)
+# multi = np.multiply(arr1, arr2)
+# divid = np.divide(arr1, arr2)
+# modulus = np.mod(arr1, arr2)
+# remn = np.remainder(arr1, arr2)
+
+# print("the addition of array are ", newarr)
+# print("the Subtraction of array are ", sub)
+# print("the multition of array are ", multi)
+# print("the division of array are ", divid)
+# print("the modulus of array are ", modulus)
+# print("the Remaining of array are ", remn)
+
+# Quotient and Mod
+arr1 = np.array([10, 20, 30, 40, 50, 60])
+arr2 = np.array([3, 7, 9, 8, 2, 33])
+
+quot = np.divmod(arr1, arr2)
+print("the Quotient of array are ", quot)
