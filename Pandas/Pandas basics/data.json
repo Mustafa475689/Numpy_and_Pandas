@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Ali Khan",
+    "age": 20,
+    "city": "Karachi",
+    "department": "Computer Science",
+    "cgpa": 3.75
+  },
+  {
+    "id": 2,
+    "name": "Ahmed Raza",
+    "age": 21,
+    "city": "Lahore",
+    "department": "Software Engineering",
+    "cgpa": 3.60
+  },
+  {
+    "id": 3,
+    "name": "Sara Ali",
+    "age": 22,
+    "city": "Islamabad",
+    "department": "Information Technology",
+    "cgpa": 3.90
+  },
+  {
+    "id": 4,
+    "name": "Fatima Noor",
+    "age": 20,
+    "city": "Peshawar",
+    "department": "Artificial Intelligence",
+    "cgpa": 3.82
+  },
+  {
+    "id": 5,
+    "name": "Usman Tariq",
+    "age": 23,
+    "city": "Quetta",
+    "department": "Data Science",
+    "cgpa": 3.45
+  },
+  {
+    "id": 6,
+    "name": "Ayesha Malik",
+    "age": 21,
+    "city": "Multan",
+    "department": "Cyber Security",
+    "cgpa": 3.88
+  },
+  {
+    "id": 7,
+    "name": "Bilal Hassan",
+    "age": 22,
+    "city": "Faisalabad",
+    "department": "Computer Science",
+    "cgpa": 3.52
+  },
+  {
+    "id": 8,
+    "name": "Zain Ahmad",
+    "age": 20,
+    "city": "Hyderabad",
+    "department": "Software Engineering",
+    "cgpa": 3.67
+  },
+  {
+    "id": 9,
+    "name": "Hina Aslam",
+    "age": 21,
+    "city": "Sialkot",
+    "department": "Artificial Intelligence",
+    "cgpa": 3.94
+  },
+  {
+    "id": 10,
+    "name": "Hamza Sheikh",
+    "age": 23,
+    "city": "Rawalpindi",
+    "department": "Information Technology",
+    "cgpa": 3.58
+  }
+]
