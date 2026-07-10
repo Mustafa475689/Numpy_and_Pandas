@@ -81,9 +81,21 @@ import pandas as pd
 #     df.loc[x, "Duration"] = 120
 #   print(df.to_string())
 
-# Removing Rows .... Delete rows where "Duration" is higher than 120:
+# # Removing Rows .... Delete rows where "Duration" is higher than 120:
+# df = pd.read_csv('data1.csv')
+# for x in df.index:
+#   if df.loc[x, "Duration"] > 120:
+#     df.drop(x, inplace = True)
+#   print(df.to_string())
+
+# ............................
+# Removing Duplicates 
+# ..........................
+
+# Discover dublicates ..
+print(df.duplicated())
+
+# .. To remove duplicates, use the drop_duplicates() method.
 df = pd.read_csv('data1.csv')
-for x in df.index:
-  if df.loc[x, "Duration"] > 120:
-    df.drop(x, inplace = True)
-  print(df.to_string())
+df.drop_duplicates(inplace = True)
+print(df.to_string())
