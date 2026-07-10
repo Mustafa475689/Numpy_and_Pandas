@@ -43,9 +43,23 @@ import pandas as pd
 
 # print(df.to_string())
 
-# Calculate the MODE, and replace any empty values with it: .... Mode = the value that appears most frequently.
-df = pd.read_csv('data.csv')
-x = df["Age"].mode()[0]
-df.fillna({"Age": x}, inplace=True)
+# # Calculate the MODE, and replace any empty values with it: .... Mode = the value that appears most frequently.
+# df = pd.read_csv('data.csv')
+# x = df["Age"].mode()[0]
+# df.fillna({"Age": x}, inplace=True)
 
-print(df.to_string())
+# print(df.to_string())
+
+# ..........................................
+# Cleaning Data of Wrong Format
+# ..........................................
+
+# # Let's try to convert all cells in the 'Date' column into dates. ..
+# # Pandas has a to_datetime() method for this:
+# df = pd.read_csv('data1.csv')
+# df['Date'] = pd.to_datetime(df['Date'], format='mixed')
+# print(df.to_string())
+
+# # Removing Rows ...
+# df.dropna(subset=['Date'], inplace = True)
+# print(df.to_string())
