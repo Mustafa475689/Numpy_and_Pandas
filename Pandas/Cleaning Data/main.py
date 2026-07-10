@@ -80,3 +80,10 @@ import pandas as pd
 #   if df.loc[x, "Duration"] > 120:
 #     df.loc[x, "Duration"] = 120
 #   print(df.to_string())
+
+# Removing Rows .... Delete rows where "Duration" is higher than 120:
+df = pd.read_csv('data1.csv')
+for x in df.index:
+  if df.loc[x, "Duration"] > 120:
+    df.drop(x, inplace = True)
+  print(df.to_string())
