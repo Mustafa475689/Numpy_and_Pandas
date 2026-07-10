@@ -93,6 +93,7 @@ import pandas as pd
 # ..........................
 
 # Discover dublicates ..
+df = pd.read_csv('data1.csv')
 print(df.duplicated())
 
 # .. To remove duplicates, use the drop_duplicates() method.
