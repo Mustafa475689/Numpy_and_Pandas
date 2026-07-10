@@ -63,3 +63,20 @@ import pandas as pd
 # # Removing Rows ...
 # df.dropna(subset=['Date'], inplace = True)
 # print(df.to_string())
+
+# .................................................
+# Fixing Wrong Data
+# .................................................
+
+# # Replacing Values .. In our example, it is most likely a typo, and the value should be "45" instead of "450", and we could just insert "45" in row 7:
+# df = pd.read_csv('data1.csv')
+# df.loc[7, 'Duration'] = 45
+# print(df.to_string)
+
+# # To replace wrong data for larger data sets you can create some rules, 
+# # e.g. set some boundaries for legal values, and replace any values that are outside of the boundaries.
+# df = pd.read_csv('data1.csv')
+# for x in df.index:
+#   if df.loc[x, "Duration"] > 120:
+#     df.loc[x, "Duration"] = 120
+#   print(df.to_string())
